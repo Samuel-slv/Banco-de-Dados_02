@@ -55,3 +55,9 @@ autor varchar(255)
 alter table livros
 add column ID_Autor  INT REFERENCES autores(ID_Autor);
 
+/* -Excluir a autor da tabela livros */
+alter table livros 
+drop column Autor;
+
+--delete table livros-- 
+--delete database livraria--
