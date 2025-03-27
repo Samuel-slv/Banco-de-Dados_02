@@ -1,17 +1,17 @@
 -- Inserindo dados de exemplo para Permissoes
-insert into Permissoes (nome, descricao) values
-('admin' 'Administrador do sistema'),
+INSERT INTO Permissoes (nome, descricao) VALUES
+('admin', 'Administrador do sistema'),
 ('vendedor', 'Vendedor com acesso limitado'),
-('cliente', 'cliente com acesso ao próprio perfil');
+('cliente', 'Cliente com acesso ao próprio perfil');
 
 -- Inserindo dados de exemplo para Usuarios
-insert into usuarios (nome, email, senha, permissao_id) values
-('administrador' , 'admin@sisvendas.com', 'senha123',1),
-('Vendedor 1', 'vendedor1@sis.com', 'senha456',2),
-('cliente 1', 'cliente1@sisvendas.com', 'senha789', 3);
+INSERT INTO Usuarios (nome, email, senha, permissao_id) VALUES
+('Administrador', 'admin@sisvendas.com', 'senha123', 1),
+('Vendedor 1', 'vendedor1@sisvendas.com', 'senha456', 2),
+('Cliente 1', 'cliente1@sisvendas.com', 'senha789', 3);
 
--- inserindo dados de exemplo para clientes
-insert into Clientes (nome, email, senha, permissao_id) values
+-- Inserindo dados de exemplo para Clientes
+INSERT INTO Clientes (nome, email, telefone, endereco) VALUES
 ('Cliente A', 'clientea@email.com', '1234-5678', 'Rua A, 123'),
 ('Cliente B', 'clienteb@email.com', '9876-5432', 'Rua B, 456'),
 ('Cliente C', 'clientec@email.com', '1111-2222', 'Rua C, 789');
@@ -41,3 +41,4 @@ INSERT INTO FormasPagamento (nome, descricao) VALUES
 ('Cartão de crédito', 'Pagamento com cartão de crédito'),
 ('Boleto bancário', 'Pagamento com boleto bancário'),
 ('Pix', 'Pagamento instantâneo via Pix');
+
